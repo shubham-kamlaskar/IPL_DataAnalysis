@@ -6,6 +6,8 @@ a = pd.read_csv("C:/Users/shubham/Desktop/Sublime/pandas/ipl2021bat.csv")
 
 x = a["PLAYER"][:5]
 y = a["Runs"][:5]
+fig = plt.figure("IPL 2021")
+plt.suptitle("Top 5 Batsman")
 plt.title("Orange Cap Holder")
 plt.subplot(2,1,1)
 #plt.xlabel("Player Name")
@@ -27,7 +29,5 @@ plt.ylabel("Average")
 x = a["PLAYER"][:5]
 y = a["Avg"][:5]
 plt.bar(x,y)
-
-
 
 plt.show()
